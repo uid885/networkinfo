@@ -1,9 +1,8 @@
 #!/bin/bash
-###########################################################
 # Author      : Christo Deale                  
 # Date        : 2023-07-25             
 # networkinfo: Utility to list Active Network Information
-###########################################################
+
 # Get the connected device
 connected_device=$(ip route | awk '/default/ {print $5}')
 
